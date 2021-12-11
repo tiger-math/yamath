@@ -1,0 +1,245 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="stylesheet" href="base.css">
+<link rel="shortcut icon" href="ロゴ2.png">
+<div class="site-title">
+ <a href="home.html" class="logo">
+  <img src="ロゴ1.png" height="72" align="left">
+ </a>
+  YAMATH
+</div>
+<title>MathJaxについて|yamath</title>
+</head>
+<body class="body"><br>
+
+<span class="page-title">MathJaxについて</span><br><br>
+
+<div class="page-contents">
+<h2>目次</h2>
+<ol>
+<li><a href="#i1">MathJaxの使い方</a></li>
+<li><a href="#i2">色々な数式</a></li>
+<li><a href="#i3">終わりに</a></li>
+</ol></div><br>
+
+どうもこんにちは。<br><br>
+今回は、
+\[
+\frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
+\]
+のように数式を html で表示する方法を紹介します。<br><br>
+
+実は、これは <span class="ipt">MathJax</span> というのを使っていて、これを使うことで、先程のような数式が表示されるのです。<br><br>
+
+では、次項で具体的にどのようにすれば MathJax を使えるのか、見ていきましょう！<br><br><br>
+
+<span class="heading" id="i1">MathJaxの使い方</span><br><br>
+
+それでは早速 MathJax を使っていくのですが、その前に html ファイルを作ってください。<br>
+html ファイルの作り方についてはこちらをご参照ください。　<a href="html入門.html">html入門</a><br><br>
+
+早速 html ファイルが作れたら、こちらのコードを入力してください。<br><br>
+
+<div class="code-l">
+<code>
+ &lt;html&gt;<br>
+ &lt;head&gt;<br>
+  &lt;script type="text/javascript" id="MathJax-script" async<br>
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;<br>
+&lt;title&gt;MathJax&lt;/title&gt;<br>
+ &lt;/head&gt;<br>
+ &lt;body&gt;<br>
+  <br>
+ &lt;/body&gt;<br>
+ &lt;/html&gt;</code>
+</div><br>
+これが入力できたら、ブラウザで html ファイルを開いて確認してみてください。<br>
+しかし、このときはまだ、タブのところに 「MathJax」 と表示されるだけで、何も表示されません。<br><br>
+
+それは bodyタグ (&lt;body&gt; ~ &lt;/body&gt; のところ) の中に何も入力してないからです。<br>
+では試しに、 bodyタグ の中になにか文字を入れてみましょう。例えば "text" など。<br><br>
+
+すると、ブラウザで開いた html ファイルを更新したときに、 bodyタグ の中に入力した文字が現れているではありませんか。<br><br>
+
+...とブラウザに何かを表示することができたので、今度は数式を表示させてみましょう！<br><br>
+
+では手始めに、分数からやっていきましょう。<br>
+ bodyタグ の中に<br>
+ <code class="code-s">
+ \(\frac{a}{b}\)</code>
+ と入力して、ブラウザを更新してみてください。<br><br>
+ 
+すると、ブラウザに <span class="result-s">\(\frac{a}{b}\)</span> と表示されていると思います。<br>
+つまり、<span class="ipt">\frac{分子}{分母}</span>で、分数:\(\frac{分子}{分母}\) が表示されます。<br><br>
+
+ちなみに数式のコード(さっきので言うと \frac{a}{b} のところ)を<br>
+<pre>\(\) で囲むと文章中に数式が表示され、<br>\[ \] で囲むと別行立てのが表示されます。</pre><br>
+
+では、次項で、分数以外のものもやっていきましょう！<br><br><br>
+
+<span class="heading" id="i2">色々な数式</span><br><br>
+
+それではどんどんやっていきます。<br><br>
+
+次は累乗です。<br><code class="code-s">
+\(底^{指数}\)</code>　→　<span class="result-s">\(底^{指数}\)</span><br><br>
+
+次は平方根です。<br><code class="code-s">
+\(\sqrt{数})</code>　→　<span class="result-s">\(\sqrt{数}\)</span><br><br>
+
+では、これまでやってきたことをまとめて、2次方程式の解の公式を書いてみましょう！<br><div class="code-l"><code>
+2次方程式 \(ax^{2}+bx+c=0\) の解は<br>
+\[<br>
+ x=\frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \tag{1}<br>
+\]となる。</code></div>
+↓<br><br>
+
+<div class="result-l">
+2次方程式 \(ax^{2}+bx+c=0\) の解は
+\[
+ x=\frac{-b \pm \sqrt{b^{2}-4ac}}{2a}　\tag{1}
+\]となる。
+</div>
+<ul>
+<li>\pm で \(\pm\)</li>
+<li>\tag{a} で (a)</li>
+</ul><br><br>
+
+次は累乗根です。<br><code class="code-s">
+\(\sqrt[n]{数}\)</code>→<span class="result-s">\(\sqrt[n]{数}\)</span><br><br>
+
+次はΣ(シグマ)です。<br><div class="code-l"><code>
+\[<br>
+\sum_{k=1}^{n} a_k = a_1 + a_2 + \dots + a_n<br>
+\]</code></div>　→　\[
+\sum_{k=1}^{n} a_k = a_1 + a_2 + \dots + a_n
+\]
+<ul>
+<li>\sum_{k=1}^{n} で \(\sum_{k=1}^{n}\) となる。</li>
+<li>\dots で "\(\dots\)" となる。</li>
+<li>a_n で \(a_n\) となる。</li>
+</ul><br><br>
+
+次は積分です。<br><div  class="code-l"><code>
+\[<br>
+\int_{a}^{b} f(x) \, dx<br>
+\]</code></div>　→
+\[
+\int_{a}^{b} f(x) \, dx
+\]
+<ul>
+<li>\, で小さいスペース</li>
+<li>不定積分なら、\int f(x) \, dx で \(\int f(x) \, dx\)</li>
+</ul><br><br>
+
+次は極限です。<br><div class="code-l"><code>
+\[<br>
+f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
+\]</code></div>↓<br><br>
+
+<div class="result-s">
+\[
+ f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}
+\]
+<ul>
+<li>\lim_{a \to b} で \(\lim_{a \to b}\) となる。</li>
+<li>\varDelta で \(\varDelta\)</li>
+</ul></div><br><br>
+
+次は3つ以上の式変形です。<br><div class="code-l"><code>
+\[<br>
+\begin{align}
+\cos 2\theta &= \cos^{2} \theta - \sin^{2} \theta \\
+&= 2\cos^{2} \theta - 1 \\
+&= 1 - 2\sin^{2} \theta
+\end{align}<br>
+\]</code></div>↓<br><br>
+
+<div class="result-l">
+\[
+\begin{align}
+  \cos 2\theta &= \cos^{2} \theta - \sin^{2} \theta \\
+  &= 2\cos^{2} \theta - 1 \\
+  &= 1 - 2\sin^{2} \theta
+  \end{align}
+\]
+</div>
+<ul>
+<li>begin{align} ~ end{align} で式変形の部分を囲む</li>
+<li>= は &= とする</li>
+<li>\theta で \(\theta\) となる</li>
+<li>\cos \sin でそれぞれ \(\cos,\sin\)</li>
+</ul><br><br>
+
+次は場合分けです。<br><div class="code-l"><code>
+\[<br>
+|x| = \begin{cases}<br>
+x & x \ge 0 のとき \\<br>
+-x & x \lt 0 のとき<br>
+\end{cases}<br>
+\]</code></div>↓<br><br>
+
+<div class="result-l">
+\[
+|x| = \begin{cases}
+x & x \ge 0 のとき \\
+-x & x \lt 0 のとき
+\end{cases}
+\]
+</div>
+<ul>
+<li>場合分けのところを begin{cases} ~ end{cases} で囲む</li>
+<li>\\\ で次の行へ移る</li>
+<li>各行に & をおくと、区切りが入り、そこで位置を揃えてくれる</li>
+<li>&#92;lt,&#92;gt,&#92;le,&#92;ge: 不等号 &lt;,&gt;,&le;,&ge;</li>
+</ul><br><br>
+
+次は行列です。<br><div class="code-l"><code>
+\(n \times n\)行列<br>
+\[<br>
+A=<br>
+\begin{pmatrix}<br>
+a_{11} & a_{12} & \ldots & a_{1n} \\<br>
+a_{21} & a_{22} & \ldots & a_{2n} \\<br>
+\vdots & \vdots & \ddots & \vdots \\<br>
+a_{n1} & a_{n2} & \ldots & a_{nn}<br>
+\end{pmatrix}<br>
+\]<br>
+が逆行列 \(A^{-1}\) をもつ必要十分条件は \(\det A \neq 0\) である。</code></div>↓<br><br>
+
+<div class="result-l">
+\(n \times n\) 行列
+\[
+A =
+\begin{pmatrix}
+a_{11} & a_{12} & \ldots & a_{1n} \\
+a_{21} & a_{22} & \ldots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \ldots & a_{nn}
+\end{pmatrix}
+\]
+が逆行列 \(A^{-1}\) をもつための必要十分条件は \(\det A \neq 0\) である。
+</div>
+<ul>
+<li>begin{pmatrix} ~ end{pmatrix} で囲む</li><br>
+
+行列を囲むカッコの形は次のように変えられます。
+<li>pmatrix: \(\begin{pmatrix} \end{pmatrix}\)</li>
+<li>bmatrix: \(\begin{bmatrix} \end{bmatrix}\)</li>
+<li>Bmatrix: \(\begin{Bmatrix} \end{Bmatrix}\)</li>
+<li>vmatrix: \(\begin{vmatrix} \end{vmatrix}\)</li>
+<li>Vmatrix: \(\begin{Vmatrix} \end{Vmatrix}\)</li>
+<li>matrix: カッコなし</li>
+</ul><br><br>
+
+<span class="heading" id="i3">終わりに</span><br><br>
+
+いかがでしたでしょうか。今回やった<span class="ipt">MathJax</span>は数式を書くときにとても役に立つと思います。<br>
+「数式をブラウザで書きたい！」と思ったら、またどうぞ。<br>
+それでは、良いプログラミングライフを！<br><br>
+
+参考文献: <a href="https://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf">https://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf</a><br><br>
+</body>
+</html>
