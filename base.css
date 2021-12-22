@@ -18,12 +18,14 @@
  word-break: break-word;
 }
 
+.page-tag{
+ font-size: 20px;
+}
+
 .page-title{
  font-size: 50px;
  font-weight: bolder;
  background-color: #c8e7fa;
- word-break: break-word;
- word-break: break-word;
 }
 
 .page-contents{
@@ -39,11 +41,6 @@
  font-size: 40px;
  font-weight: bolder;
  background-color: #ffe4b3;
- word-break: break-word;
-}
-
-.ipt{
- font-weight: bolder;
  word-break: break-word;
 }
 
