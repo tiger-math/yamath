@@ -35,8 +35,7 @@
 .all-page{
  background-color: #fffae6;
  word-break: break-word;
- padding-bottom: 10px;
- padding-left: 10px;
+ padding: 10px;
 }
 
 .page{
