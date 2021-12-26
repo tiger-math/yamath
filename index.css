@@ -35,16 +35,15 @@
 .all-page{
  background-color: #fffae6;
  word-break: break-word;
- padding: 10px;
+ padding: 0px 5px 5px 5px;
 }
 
 .page{
  border-radius: 10px;
  background-color: #ccffff;
  font-size: 30px;
- padding-left: 5px;
- margin-right: 5px;
- padding-bottom: 10px;
+ padding: 5px;
+ margin: 5px;
 }
 
 .page-tag{
