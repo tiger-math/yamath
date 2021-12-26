@@ -44,6 +44,13 @@
  word-break: break-word;
 }
 
+.subheading{
+ font-size: 40px;
+ font-weight: bolder;
+ background-color: #f7ccff;
+ word-break: break-word;
+}
+
 .v-ipt{
  font-weight: bolder;
  word-break: break-word;
