@@ -20,6 +20,7 @@
  background-color: #e1faf0;
  font-size: 24px;
  margin-left: 20px;
+ word-break: break-word;
 }
 
 .page-tag{
@@ -38,6 +39,7 @@
  padding-left: 10px;
  padding-top: 5px;
  padding-bottom: 5px;
+ word-break: break-word;
 }
 
 .heading{
@@ -63,6 +65,7 @@
  padding-left: 30px;
  padding-top: 10px;
  padding-bottom: 10px;
+ word-break: break-word;
 }
 
 .code-s{
@@ -75,6 +78,7 @@
  padding-left: 30px;
  padding-top: 10px;
  padding-bottom: 10px;
+ word-break: break-word;
 }
 
 .result-s{
