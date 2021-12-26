@@ -21,7 +21,7 @@
  background-color: #fddea5;
  width: 100%;
  table-layout: fixed;
- word-wrap: break-word;
+ word-break: break-all;
 }
 
 .yamath{
@@ -39,7 +39,7 @@
  padding: 0px 5px 5px 5px;
  width: 100%;
  table-layout: fixed;
- word-wrap: break-word;
+ word-break: break-all;
 }
 
 .page{
