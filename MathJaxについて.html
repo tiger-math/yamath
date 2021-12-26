@@ -14,15 +14,25 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body class="body"><br>
 
-<span class="page-title">MathJaxについて</span>　<span class="page-tag">2021.12.18　<a href="tag-プログラミング.html">#プログラミング</a>　<a href="tag-数学.html">#数学</a>　<a href="tag-html.html">#html</a></span><br><br>
+<span class="page-title">MathJaxについて</span>　<span class="page-tag">最終更新: 2021.12.18　<a href="tag-プログラミング.html">#プログラミング</a>　<a href="tag-数学.html">#数学</a>　<a href="tag-html.html">#html</a></span><br><br>
 
 <div class="page-contents">
 <h2>目次</h2>
-<ol>
-<li><a href="#i1">MathJaxの使い方</a></li>
-<li><a href="#i2">色々な数式</a></li>
-<li><a href="#i3">終わりに</a></li>
-</ol></div><br>
+　1. <a href="#1">MathJaxの使い方</a><br>
+　　1-1. <a href="#1-1">準備</a><br>
+　　1-2. <a href="#1-2">分数</a><br>
+　2. <a href="#2">色々な数式</a><br>
+　　2-1. <a href="#2-1">累乗</a><br>
+　　2-2. <a href="#2-2">平方根</a><br>
+　　2-3. <a href="#2-3">累乗根</a><br>
+　　2-4. <a href="#2-4">シグマ</a><br>
+　　2-5. <a href="#2-5">積分</a><br>
+　　2-6. <a href="#2-6">極限</a><br>
+　　2-7. <a href="#2-7">複数の式変形</a><br>
+　　2-8. <a href="#2-8">場合分け</a><br>
+　　2-9. <a href="#2-9">行列</a><br>
+　3. <a href="#3">終わりに</a>
+</div><br>
 
 どうもこんにちは。<br><br>
 今回は、
@@ -35,8 +45,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 では、次項で具体的にどのようにすれば MathJax を使えるのか、見ていきましょう！<br><br><br>
 
-<span class="heading" id="i1">MathJaxの使い方</span><br><br>
+<span class="heading" id="1">MathJaxの使い方</span><br><br>
 
+　<span class="subheading" id="1-1">準備</span><br><br>
+ 
 それでは早速 MathJax を使っていくのですが、その前に html ファイルを作ってください。<br>
 html ファイルの作り方についてはこちらをご参照ください。　<a href="html入門.html">html入門</a><br><br>
 
@@ -65,6 +77,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;
 
 ...とブラウザに何かを表示することができたので、今度は数式を表示させてみましょう！<br><br>
 
+　<span class="subheading" id="1-2">分数</span><br><br>
+ 
 では手始めに、分数からやっていきましょう。<br>
  bodyタグ の中に<br>
  <code class="code-s">
@@ -79,17 +93,21 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;
 
 では、次項で、分数以外のものもやっていきましょう！<br><br><br>
 
-<span class="heading" id="i2">色々な数式</span><br><br>
+<span class="heading" id="2">色々な数式</span><br><br>
 
 それではどんどんやっていきます。<br><br>
 
+　<span class="subheading" id="2-1">累乗</span><br><br>
+ 
 次は累乗です。<br><code class="code-s">
 \(底^{指数}\)</code>　→　<span class="result-s">\(底^{指数}\)</span><br><br>
 
+　<span class="subheading" id="2-2">平方根</span><br><br>
+ 
 次は平方根です。<br><code class="code-s">
 \(\sqrt{数})</code>　→　<span class="result-s">\(\sqrt{数}\)</span><br><br>
 
-では、これまでやってきたことをまとめて、2次方程式の解の公式を書いてみましょう！<br><div class="code-l"><code>
+では、これまでやってきたことをまとめて、早速2次方程式の解の公式を書いてみましょう！<br><div class="code-l"><code>
 2次方程式 \(ax^{2}+bx+c=0\) の解は<br>
 \[<br>
  x=\frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \tag{1}<br>
@@ -107,9 +125,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;
 <li>\tag{a} で (a)</li>
 </ul><br><br>
 
+　<span class="subheading" id="2-3">累乗根</span><br><br>
+ 
 次は累乗根です。<br><code class="code-s">
 \(\sqrt[n]{数}\)</code>→<span class="result-s">\(\sqrt[n]{数}\)</span><br><br>
 
+　<span class="subheading" id="2-4">シグマ</span><br><br>
+ 
 次はΣ(シグマ)です。<br><div class="code-l"><code>
 \[<br>
 \sum_{k=1}^{n} a_k = a_1 + a_2 + \dots + a_n<br>
@@ -126,6 +148,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;
 <li>a_n で \(a_n\) となる。</li>
 </ul><br><br>
 
+　<span class="subheading" id="2-5">積分</span><br><br>
+ 
 次は積分です。<br><div  class="code-l"><code>
 \[<br>
 \int_{a}^{b} f(x) \, dx<br>
@@ -141,6 +165,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"&gt;&lt;/script&gt;
 <li>不定積分なら、\int f(x) \, dx で \(\int f(x) \, dx\)</li>
 </ul><br><br>
 
+　<span class="subheading" id="2-6">極限</span><br><br>
+ 
 次は極限です。<br><div class="code-l"><code>
 \[<br>
 f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
@@ -155,6 +181,8 @@ f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
 <li>\varDelta で \(\varDelta\)</li>
 </ul></div><br><br>
 
+　<span class="subheading" id="2-7">複数の式変形</span><br><br>
+ 
 次は3つ以上の式変形です。<br><div class="code-l"><code>
 \[<br>
 \begin{align}
@@ -180,6 +208,8 @@ f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
 <li>\cos \sin でそれぞれ \(\cos,\sin\)</li>
 </ul><br><br>
 
+　<span class="subheading" id="2-8">場合分け</span><br><br>
+ 
 次は場合分けです。<br><div class="code-l"><code>
 \[<br>
 |x| = \begin{cases}<br>
@@ -203,6 +233,8 @@ x & x \ge 0 のとき \\
 <li>&#92;lt,&#92;gt,&#92;le,&#92;ge: 不等号 &lt;,&gt;,&le;,&ge;</li>
 </ul><br><br>
 
+　<span class="subheading" id="2-9">行列</span><br><br>
+ 
 次は行列です。<br><div class="code-l"><code>
 \(n \times n\)行列<br>
 \[<br>
@@ -241,7 +273,7 @@ a_{n1} & a_{n2} & \ldots & a_{nn}
 <li>matrix: カッコなし</li>
 </ul><br><br>
 
-<span class="heading" id="i3">終わりに</span><br><br>
+<span class="heading" id="3">終わりに</span><br><br>
 
 いかがでしたでしょうか。今回やった<strong>MathJax</strong>は数式を書くときにとても役に立つと思います。<br>
 「数式をブラウザで書きたい！」と思ったら、またどうぞ。<br>
