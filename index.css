@@ -25,6 +25,7 @@
 .explain{
  background-color: #fddea5;
  padding-left: 10px;
+ word-break: break-word;
 }
 
 .yamath{
