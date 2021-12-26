@@ -19,7 +19,9 @@
 
 .explain{
  background-color: #fddea5;
- overflow: visible;
+ width: 100%;
+ table-layout: fixed;
+ word-wrap: break-word;
 }
 
 .yamath{
@@ -35,7 +37,9 @@
 .all-page{
  background-color: #fffae6;
  padding: 0px 5px 5px 5px;
- overflow: visible;
+ width: 100%;
+ table-layout: fixed;
+ word-wrap: break-word;
 }
 
 .page{
