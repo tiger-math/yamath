@@ -1,3 +1,7 @@
+.html{
+ width: 100%;
+}
+
 .logo{
  text-align: left;
 }
@@ -15,7 +19,6 @@
  background-color: #e1faf0;
  font-size: 20px;
  margin-left: 20px;
- word-break: break-word;
 }
 
 .explain{
@@ -34,7 +37,6 @@
 
 .all-page{
  background-color: #fffae6;
- word-break: break-word;
  padding: 0px 5px 5px 5px;
 }
 
