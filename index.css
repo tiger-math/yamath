@@ -1,3 +1,8 @@
+.html{
+ word-wrap: break-word;
+ white-space: pre-wrap;
+}
+
 .logo{
  text-align: left;
 }
