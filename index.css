@@ -19,9 +19,6 @@
 
 .explain{
  background-color: #fddea5;
- width: 100%;
- table-layout: fixed;
- word-break: break-all;
 }
 
 .yamath{
@@ -37,9 +34,6 @@
 .all-page{
  background-color: #fffae6;
  padding: 0px 5px 5px 5px;
- width: 100%;
- table-layout: fixed;
- word-break: break-all;
 }
 
 .page{
