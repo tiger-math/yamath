@@ -41,7 +41,7 @@
 
 .all-page{
  background-color: #fffae6;
- padding: 0px 5px 5px 5px;
+ padding: 10px;
  word-break: break-all;
 }
 
@@ -50,7 +50,6 @@
  background-color: #ccffff;
  font-size: 30px;
  padding: 5px;
- margin: 5px;
 }
 
 .page-tag{
