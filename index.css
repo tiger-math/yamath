@@ -22,7 +22,7 @@ a{text-decoration:none;}
 .body{
  background-color: #e1faf0;
  font-size: 20px;
- margin-left: 20px;
+ margin-left: 10px;
  word-break: break-all;
 }
 
@@ -68,4 +68,11 @@ a{text-decoration:none;}
 
 .page-img{
  text-align: left;
+}
+
+.tag{
+ background-color: #ffcccc;
+ font-size: 24px;
+ padding: 0 10 10 10;
+ width: 103%
 }
