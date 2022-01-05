@@ -24,7 +24,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 　　2.1 <a href="#2.1">pタグ</a><br>
 　　2.2 <a href="#2.2">hタグ</a><br>
 　　2.3 <a href="#2.3">aタグ</a><br>
-　　2.4 <a href="#2.4">imgタグ</a>
+　　2.4 <a href="#2.4">imgタグ</a><br>
+　　2.5 <a href="#2.5">tableタグ</a><br>
+　　2.6 <a href="#2.6">ol,ulタグ</a><br>
+　3. <a href="#3">終わりに</a>
 </div><br>
 
 どうもこんにちは。<br><br>
@@ -239,8 +242,128 @@ urlではなく、名前を入力するだけで大丈夫です。(※拡張子�
 画像が見つからないはずなので、下のようにalt属性に書かれているメッセージが出ます。<br>
 <span class="result-tab">imgタグ</span><div class="result-display" style="padding:10px;"><img alt="yamathのロゴ" height="100"></div><br><br>
 
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.5">tableタグ</span><br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text">終わりに</span><br><br>
+次は tableタグ です。<br>
+これは、表のタグです。<br><br>
+
+では早速、次のプログラムを打ってみてください<br><br>
+
+<div class="code"><code><span class="r">
+&lt;table <span class="lg">border</span>&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">1-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">1-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">2-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">2-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">3-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">3-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&lt;/table&gt;</span></code></div><br><br>
+
+すると、このような表ができると思います。<br>
+<span class="result-tab">tableタグ</span><div class="result-display">
+<table border>
+ <tr>
+  <td>1-1</td>
+  <td>1-2</td>
+ </tr>
+ <tr>
+  <td>2-1</td>
+  <td>2-2</td>
+ </tr>
+ <tr>
+  <td>3-1</td>
+  <td>3-2</td>
+ </tr>
+</table><br></div><br>
+
+この tableタグ の中に入っている<br>
+trタグ が表の列を、<br>
+tdタグ が表の中身(セル)を記述しています。<br><br>
+
+当然、 trタグ、tdタグ の数を増やせば、<br>
+表が大きくなります。<br><br>
+
+また、tableタグの属性に、border というものがありますが、<br>
+これを外すと、表の周りの枠がなくなります。<br><br>
+
+<div class="code"><code><span class="r">
+&lt;table&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">1-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">1-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">2-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">2-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&ensp;&lt;tr&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">3-1</span>&lt;/td&gt;<br>
+&ensp;&ensp;&lt;td&gt;<span class="w">3-2</span>&lt;/td&gt;<br>
+&ensp;&lt;/tr&gt;<br>
+&lt;/table&gt;</span></code></div><br>
+
+<span class="result-tab">tableタグ-borderなし</span><div class="result-display">
+<table>
+ <tr>
+  <td>1-1</td>
+  <td>1-2</td>
+ </tr>
+ <tr>
+  <td>2-1</td>
+  <td>2-2</td>
+ </tr>
+ <tr>
+  <td>3-1</td>
+  <td>3-2</td>
+ </tr>
+</table><br></div><br>
+
+これは、文字や数字を並べるときに便利ですね。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.6">ol,ulタグ</span><br><br>
+
+ol,ulタグはリストを作るタグで、<br>
+olタグは番号付きリストを、<br>
+ulタグは箇条書きをしてくれます。<br><br>
+
+試しに、次のコードを打ってみてください<br><br>
+
+<div class="code"><code class="r">
+&lt;h2&gt;<span class="w">olタグ</span>&lt;/h2&gt;<br>
+&lt;ol&gt;<br>
+&ensp;&lt;li&gt;<span class="w">項目1</span>&lt;/li&gt;<br>
+&ensp;&lt;li&gt;<span class="w">項目2</span>&lt;/li&gt;<br>
+&lt;/ol&gt;<br><br>
+&lt;h2&gt;<span class="w">ulタグ</span>&lt;/h2&gt;<br>
+&lt;ul&gt;<br>
+&ensp;&lt;li&gt;<span class="w">項目1</span>&lt;/li&gt;<br>
+&ensp;&lt;li&gt;<span class="w">項目2</span>&lt;/li&gt;<br>
+&lt;/ul&gt;</code></div><br>
+
+すると、このようなリストができると思います。<br>
+<span class="result-tab">ol,ulタグ</span><div class="result-display">
+<h2>olタグ</h2>
+<ol>
+ <li>項目1</li>
+ <li>項目2</li>
+</ol>
+
+<h2>ulタグ</h2>
+<ul>
+ <li>項目1</li>
+ <li>項目2</li>
+</ul></div><br>
+
+ol,ulタグの中で、liタグで項目を囲んで、リストを作ります。<br><br>
+
+
+<span class="heading-box">&ensp;</span><span class="heading-text" id="3">終わりに</span><br><br>
 
 htmlは面白いので、興味のある方はこれからも、どんどん進めてってください！<br>
 では、さようなら。
