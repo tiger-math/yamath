@@ -3,7 +3,7 @@ word-wrap: break-word;
 white-space: pre-wrap;
 }
 
-a{text-decoration:none;}
+a{text-decoration:none; color:black;}
 
 .logo{
  text-align: left;
@@ -94,14 +94,23 @@ a{text-decoration:none;}
  text-decoration-skip-ink: none;
 }
 
+.article{
+ background-color:#ccffff;
+ width:150px;
+ padding:10px;
+ color:black;
+}
+
+.article-text{font-size:12px;}
+
 .code{
- background-color: #202020;
- color: #ffffff;
+ background-color: #1f1f1f;
+ color: #f8f8f2;
  padding: 20px;
 }
 
 /*color*/
-.r{color:#ff3a33;} .lg{color:#8cff7a;} .b{color:9877dd;} .g{color:#6b6b6b;} .y{color:#fff599;} .w{color:#ffffff;}
+.r{color:#f92672;} .lg{color:#a6e22e;} .b{color:#ae81ff;} .g{color:#75715e;} .y{color:#e6db74;} .w{color:#f8f8f2;}
 
 .result-tab{
  padding: 0px 10px 0px 10px;
