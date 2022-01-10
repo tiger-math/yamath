@@ -1,0 +1,309 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="stylesheet" href="page.css">
+<link rel="shortcut icon" href="ロゴ2.png">
+<div class="site-title">
+ <a href="index.html" class="logo">
+  <img src="logo1.svg" height="71.43" align="left">
+ </a>
+  <span class="serif">YAMATH</span>
+</div>
+<title>css入門|YAMATH</title>
+</head>
+<body class="body"><br>
+
+ <span class="page-title">css入門</span>　<span class="page-tag">最終更新:2022.1.10　<a href="tag-入門.html">#入門</a>　<a href="tag-css.html">#css</a>　<a href="tag-プログラミング.html">#プログラミング</a></span><br><br>
+
+<div class="page-contents">
+<h2>目次</h2><hr class="contents">
+　1. <a href="#1">準備</a><br>
+　　1.1 <a href="#1.1">cssとは？</a><br>
+　　1.2 <a href="#1.2">環境構築</a><br>
+　2. <a href="#2">cssの使い方</a><br>
+　　2.1 <a href="#2.1">spanタグとdivタグ</a><br>
+　　2.2 <a href="#2.2">文字色の変更</a><br>
+　　2.3 <a href="#2.3">タグの装飾</a><br>
+　3. <a href="#3">色々なプロパティ</a><br>
+　　3.1 <a href="#3.1">color</a><br>
+　　3.2 <a href="#3.2">background-color</a><br>
+　　3.3 <a href="#3.3">font-size</a><br>
+　　3.4 <a href="#3.4">text-decoration</a><br>
+　4. <a href="#4">最後に</a>
+　
+</div><br>
+
+<span class="heading-box">&ensp;</span><span class="heading-text" id="1"> 準備</span><hr class="heading-hr"><br><br>
+
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1.1"> cssとは？</span><br><br>
+
+<a href="html入門.html" class="a">html入門</a>というページで、<br>
+<span class="border">サイトを構成しているのは、html だ。</span><br>
+というようなことを言ったと思いますが、<br>
+html だけでは、<span class="ipt">とても質素なものしかできない</span>です。<br><br>
+
+そこで登場するのが、飾り付けをしてくれる、 <strong>css</strong>です。<br><br>
+
+この YAMATH でも、css を使っていて、cssを使わないと、下のように、質素になってしまいます。<br>
+<a href="https://tiger-math.github.io/yamath/YAMATH%20css抜き.png" title="YAMATH css抜き" target="_blank"><img src="YAMATH css抜き.png" width="50%"></a><br><br>
+
+それでは早速、css の使い方を見ていきましょう。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1.2"> 環境構築</span><br><br>
+
+では、まずhtmlファイルを準備しましょう。<br>
+準備の仕方は、コチラ↓
+<div class="article">
+ <a href="html入門.html#2.1" title="html入門" target="_blank">
+  <img src="html.png" width="150px"><br>
+  <strong>html入門</strong><br>
+  <span class="article-text">どうもこんにちは。今回はhtml入門というのをやっ...</span>
+ </a>
+</div><br>
+
+そしたら、次は、headの中に <span class="border">&lt;link rel="stylesheet" href="~~.css"&gt;</span> を入れます。<br>
+このプログラムを入れることで、cssファイルを読み込むことができます。<br><br>
+
+今回は、index.html というhtmlファイルに index.css というcssファイルを読み込みます。<br>
+そうして、index.htmlの中を下のようにします。<br><br>
+
+index.html
+<div class="code"><code>
+&lt;!DOCTYPE html&gt;<br>
+<span class="r">&lt;html&gt;<br>
+&ensp;&lt;head&gt;<br>
+&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
+&ensp;&ensp;<span class="border" style="border-color:white;">&lt;link <span class="lg">rel</span><span class="w">=</span><span class="y">"stylesheet"</span> <span class="lg">href</span><span class="w">=</span><span class="y">"index.css"</span>&gt;</span><br>
+&ensp;&ensp;&lt;title&gt;<span class="w">css入門</span>&lt;/title&gt;<br>
+&ensp;&lt;/head&gt;<br>
+&ensp;&lt;body&gt;<br>
+&ensp;&ensp;<br>
+&ensp;&lt;/body&gt;<br>
+&lt;/html&gt;
+</span></code></div><br>
+
+これで、index.html に、index.css を読み込むことが、できました。<br><br>
+
+それでは次項で、css を使ってみましょう！<br><br>
+
+<span class="heading-box">&ensp;</span><span class="heading-text" id="2"> cssの使い方</span><hr class="heading-hr"><br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.1"> spanタグとdivタグ</span><br><br>
+
+まず、css を使うときには、<span class="u">どこにどの飾り付けを適用させるか</span>を明記しないといけません。<br><br>
+
+そこで使うのが、spanタグ と divタグ です。<br><br>
+
+この2つのタグは、単独では意味を持たないのですが、囲った部分をグループ化することができます。<br>
+そして、そのグループ名をつけるために、<span class="ipt">class属性</span> を使います。<br><br>
+
+例えば、<br>
+<code class="border">&lt;span class="~~"&gt;~~&lt;/span&gt;</code> や <code class="border">&lt;div class="~~"&gt;~~&lt;/div&gt;</code><br>
+のように使います。<br><br>
+
+実は、<span class="ipt">class属性は span,divタグ 以外のタグにも使えます。</span><br>
+なので、<code class="border">&lt;h1 class="~~"&gt;~~&lt;/h1&gt;</code>のようにも使えます。<br><br>
+
+ではここで、練習として、"css" というグループ名をつけて、飾り付けをしてみましょう。<br><br>
+
+index.html<br>
+<div class="code"><code>
+&lt;!DOCTYPE html&gt;<br>
+<span class="r">&lt;html&gt;<br>
+&ensp;&lt;head&gt;<br>
+&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
+&ensp;&ensp;&lt;link <span class="lg">rel</span><span class="w">=</span><span class="y">"stylesheet"</span> <span class="lg">href</span><span class="w">=</span><span class="y">"index.css"</span>&gt;<br>
+&ensp;&ensp;&lt;title&gt;<span class="w">css入門</span>&lt;/title&gt;<br>
+&ensp;&lt;/head&gt;<br>
+&ensp;&lt;body&gt;<br>
+<div class="border" style="border-color:white;">&ensp;&ensp;&lt;span <span class="lg">class</span><span class="w">=</span><span class="y">"css"</span>&gt;<br>
+&ensp;&ensp;&ensp;&lt;p&gt;<span class="w">css体験</span>&lt;/p&gt;<br>
+&ensp;&ensp;&lt;/span&gt;</div>
+&ensp;&lt;/body&gt;<br>
+&lt;/html&gt;
+</span></code></div>
+↓<br>
+<span class="result-tab">css入門</span><div class="result-display">
+<span><p>css体験</p></span></div><br>
+
+まだ、飾り付けはされていません。<br>
+それは、<span class="u">cssというグループにどんな飾り付けをするか</span>をまだ指定してないからです。<br><br>
+
+それでは、次の項で、実際に少し飾り付けをしてみましょう。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.2"> 文字色の変更</span><br><br>
+
+それでは、index.css の方に移って飾り付けを指定しましょう。<br>
+今回は、文字色を赤色に変更させたいと思います。<br><br>
+
+index.css<br>
+<div class="code"><code>
+.css{<br>
+&ensp;<span class="lg">color</span>: <span class="r">red</span>;<br>
+}</code></div>
+↓<br>
+<span class="result-tab">css入門</span><div class="result-display">
+<p style="color:red">css体験</p></div><br>
+
+<strong>color</strong>という属性で、文字色を指定できます。<br><br>
+
+<span class="u t">.(ドット)</span>を後ろにつけて、グループ名をつけ、<span class="u t">{}(中括弧)</span>で、飾り付けのコードを囲むことで、飾り付けをすることができます。<br><br>
+
+そのとき、<code class="border">プロパティ<strong>:</strong> 値<strong>;</strong></code>のように、<br>
+プロパティ(先程だと "color" )を書いたあと、"<strong>:</strong>" をつけ、<br>
+値(先程だと "red" )を書いたあと、"<strong>;</strong>" をつけます。<br><br>
+
+結局、こんな感じになります。
+<div class="code"><code>
+.セレクタ(グループ名のこと){<br>
+&ensp;&ensp;<span class="lg">プロパティ</span>: <span class="b">値</span>; ....<br>
+}
+</code></div>
+※上の改行や空白は見やすさのためなので、<code class="border">.セレクタ{プロパティ:値; ....}</code>でも大丈夫です。また、一つの中括弧の中に、複数のプロパティを指定しても大丈夫です。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.3"> タグの装飾</span><br><br>
+
+「このタグのときはずっとこの装飾をしたい！」<br>
+という要望に応える書き方を紹介します。<br>
+例えば、「リンク(aタグ)は全部赤色にしたい！」というようなときに使える手法です。<br><br>
+
+それは、、、<span class="u t">セレクタの前に .(ドット) をつけないこと</span>です。<br><br>
+
+例として、先程の aタグ はすべて赤色にする、は下のようにすればできます。
+
+<div class="code"><code>
+<span class="r">a</span>{<br>
+&ensp;<span class="lg">color</span>: <span class="r">red</span>;<br>
+}</code></div><br>
+
+このとき、aタグのところに <span class="border">class="a"</span> と書かなくて大丈夫です。<br><br>
+
+<span class="heading-box">&ensp;</span><span class="heading-text" id="3"> 色々なプロパティ</span><hr class="heading-hr"><br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.1"> color</span><br><br>
+
+先程使った colorプロパティ をもう少し詳しくやります。<br><br>
+
+値ですが、 red,green,yellow,white,black,,, などと単語で指定することもできるのですが、<br>
+それとはまた違う色を出す方法について、みていきます。<br><br>
+
+そもそもこの画面上に出ている色は、赤、緑、青の光の三原色をうまく調整して色を出しています。<br>
+そこで、例えば白だったら、赤、緑、青(この三色を略して、RGB)を全部全開とやったり、<br>
+赤だったら、赤全開で、その他は出さないというようにやっています。<br><br>
+
+そして、それをどのように調節したのか、というのを表す物があり、それは、<span class="ipt">カラーコード</span>と言います。<br><br>
+
+そのカラーコードを使って、下のように色を指定することができます。<br>
+<div class="code"><code>
+.セレクタ{<br>
+&ensp;&ensp;<span class="lg">color</span>: <span class="b">#カラーコード</span>;<br>
+}
+</code></div><br>
+
+そうすれば、自分の好きな色が、自由に出せますね。<br>
+しかし、その色のカラーコードが分からなければ、元も子もありません。<br><br>
+
+そのカラーコードがたくさんのっているありがたいサイトがあります。<br>
+それが、コチラです　→<a href="https://www.colordic.org/" class="a">原色大辞典</a><br>
+ありがたいですね。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.2"> background-color</span><br><br>
+
+前項と関係があるプロパティです。<br><br>
+
+こいつは、背景色を指定してくれます。<br>
+そして、その色は前回同様、redなどの単語か、カラーコードで指定します。<br><br>
+
+<div class="code"><code>
+<span class="lg">backgroud-color</span>: <span class="blue">色</span>;
+</code></div><br>
+
+ちなみに、このサイトの見出し小見出しに出ている色付きの四角もこの background-color をつかっています。<br><br>
+
+コードは下のような感じです。<br>
+html
+<div class="code"><code class="r">&lt;span <span class="lg">class</span><span class="w">=</span><span class="y">"heading-box"</span>&gt;<span class="b">&amp;ensp;</span>&lt;/span&gt;</code></div>
+
+css
+<div class="code"><code>
+.heading-box{<br>
+&ensp;<span class="lg">font-size</span>: <span class="b">40px</span>;<br>
+&ensp;<span class="lg">background-color</span>: <span class="b">#ffe4b3</span>;<br>
+}
+</code></div><br>
+
+font-size というプロパティは次項で説明します。<br>
+また、&amp;ensp; というのは、半角スペースを表します。<br><br>
+
+結局、あの四角は、空白に背景色をつけた、という感じです。<br>
+それで、四角みたいにしてます。実際四角ですね。<br><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.3"> font-size</span><br><br>
+
+これは前項で少し触れましたが、文字の大きさを指定するプロパティです。<br><br>
+
+数値の単位は一般的に px(ピクセル) です。<br><br>
+
+px というのは、デジタル画像を構成する最小単位です。<br>
+デジタル画像というのは、小さな四角い点が集まってできていて、この点それぞれが色のついた光を放つことで、画像、動画などを表しています。<br>
+これらの一点の大きさを px としています。<br><br>
+
+使用例
+<div class="code"><code><span class="lg">font-size</span>: <span class="b">24px</span>;</code></div><br>
+
+　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.4"> text-decoration</span><br><br>
+
+次は、文字の装飾です。<br><br>
+
+このプロパティでできることは
+<ul>
+<li>下線を引く</li>
+<li>上線を引く</li>
+<li>取り消し線を引く</li>
+<li>テキストを点滅させる</li>
+※現在、主要なPC用ブラウザでは効果がありません
+</ul>
+の4つです。<br><br>
+
+プログラムは下のようです。
+<div class="code"><code>
+<span class="g">/*下線*/</span><br>
+.underline{<br>
+&ensp;<span class="lg">text-decoration</span>: <span class="b">underline</span>;<br>
+}<br><br>
+
+<span class="g">/*上線*/</span><br>
+.overline{<br>
+&ensp;<span class="lg">text-decoration</span>: <span class="b">overline</span>;<br>
+}<br><br>
+
+<span class="g">/*取り消し線*/</span><br>
+.line-through{<br>
+&ensp;<span class="lg">text-decoration</span>: <span class="b">line-through</span>;<br>
+}<br><br>
+
+<span class="g">/*点滅(非推奨)*/</span><br>
+.blink{<br>
+&ensp;<span class="lg">text-decoration</span>: <span class="b">blink</span>;<br>
+}</code></div>
+
+そして、下のように装飾されます。<br><br>
+
+<span class="result-tab">text-decoration</span>
+<div class="result-display" style="padding-left:10px;">
+<p style="text-decoration:underline;">下線</p>
+<p style="text-decoration:overline;">上線</p>
+<p style="text-decoration:line-through;">取り消し線</p>
+<p style="text-decoration:blink;">点滅(非推奨)</p>
+</div><br>
+
+<span class="heading-box">&ensp;</span><span class="heading-text" id="4"> 最後に</span><br><br>
+
+cssには他にもたくさんのプロパティがあるので、調べてみてくださいね。<br>
+今回はここらへんで閉じます。<br>
+さようなら<br>
+
+</body>
+</html>
