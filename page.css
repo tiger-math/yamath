@@ -5,6 +5,8 @@ white-space: pre-wrap;
 
 a{text-decoration:none; color:black;}
 
+.a{text-decoration:underline; color:blue;}
+
 .logo{
  text-align: left;
 }
@@ -89,10 +91,12 @@ a{text-decoration:none; color:black;}
  padding: 3px;
 }
 
-.underline{
+.u{
  text-decoration: underline;
  text-decoration-skip-ink: none;
 }
+
+.t{font-weight:bolder;}
 
 .article{
  background-color:#ccffff;
