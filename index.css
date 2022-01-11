@@ -7,7 +7,7 @@
  text-align: left;
 }
 
-a{text-decoration:none;}
+a{text-decoration:none;color:black;}
 
 .title{
  background-color: #66ccff;
@@ -65,6 +65,7 @@ a{text-decoration:none;}
  padding-left: 5px;
  font-size: 50px;
  text-decoration: underline;
+ color: blue;
 }
 
 .page-img{
