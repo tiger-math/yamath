@@ -26,6 +26,7 @@ a{text-decoration:none; color:black;}
  font-size: 24px;
  margin: 5px 20px 10px 20px;
  word-break: break-word;
+ width: 80%;
 }
 
 .page-tag{
@@ -136,3 +137,17 @@ a{text-decoration:none; color:black;}
 .flex {
  display: flex;
  }
+
+.ad{
+ position: fixed;
+ top: 20;
+ right: 20;
+}
+
+.ad-article{
+ background-color:#ccffff;
+ width:150px;
+ padding:10px;
+ color:black;
+ margin-bottom: 10px;
+}
