@@ -52,7 +52,7 @@ function click_button() {
 }
 
 function alert_button() {
- if ($alert.textContent = '通知を受け取らない') {
+ if ($alert.textContent === '通知を受け取らない') {
   $alert.textContent ='通知を受け取る'
   alert_do = 0;
  } else {
