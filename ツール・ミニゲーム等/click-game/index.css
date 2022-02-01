@@ -1,6 +1,6 @@
 body{background-color:#f0f8ff;user-select:none;}
 .center{text-align:center;}
-#text_click{font-size:40px;font-weight:bolder;}
+#text_click{font-size:30px;font-weight:bolder;}
 #button_click{
  user-select:none;
  font-size:30px;
