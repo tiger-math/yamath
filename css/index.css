@@ -19,13 +19,15 @@ a{text-decoration:none;color:black;}
  font-family: ＭＳ ゴシック;
 }
 
-.body{
+body{
  background-color: #e1faf0;
  font-size: 20px;
  margin-left: 10px;
  margin-right: 10px;
  word-break: break-word;
 }
+
+.serif{font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;}
 
 .explain{
  background-color: #fddea5;
@@ -77,3 +79,5 @@ a{text-decoration:none;color:black;}
  font-size: 24px;
  padding: 0 10 10 10;
 }
+
+#tagNo{font-size:24px;}
