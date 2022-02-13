@@ -1,398 +1,67 @@
-<html>
-<head>
-<script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<link rel="stylesheet" href="page.css">
-<link rel="shortcut icon" href="ロゴ2.png">
-<div class="site-title">
- <a href="index.html" class="logo">
-  <img src="logo1.svg" height="71.43" align="left">
- </a>
-  <span class="serif">YAMATH</span>
-</div>
-<title>html入門|YAMATH</title>
-</head>
-<body class="body"><br>
- <span class="page-title">html入門</span>　<span ckass="page-tag">最終更新:2022.1.8　<a href="tag-プログラミング.html">#プログラミング</a>　<a href="tag-html.html">#html</a>　<a href="tag-入門.html">#入門</a></span><br><br>
+<head><meta charset="UTF-8"></head><body>
+今回は、2022年1月に大型アップデートするので、それについてです。<br>
+どんなことを修正したのかをざっくりと説明します。<br><br>
 
-<div class="page-contents">
-<h2>目次</h2><hr class="contents">
-　1. <a href="#1">htmlとは？</a><br>
-　2. <a href="#2">環境構築</a><br>
-　　2.1 <a href="#2.1">htmlファイルの準備</a><br>
-　　2.2 <a href="#2.2">少しコーディング</a><br>
-　3. <a href="#3">いろんなタグ</a><br>
-　　3.1 <a href="#3.1">pタグ</a><br>
-　　3.2 <a href="#3.2">hタグ</a><br>
-　　3.3 <a href="#3.3">aタグ</a><br>
-　　3.4 <a href="#3.4">imgタグ</a><br>
-　　3.5 <a href="#3.5">tableタグ</a><br>
-　　3.6 <a href="#3.6">ol,ulタグ</a><br>
-　　3.7 <a href="#3.7">コメントアウト</a><br>
-　4. <a href="#4">終わりに</a>
-</div><br>
+<span class="heading" id="1">修正点</span>
+<span class="Sheading" id="1.1">目次</span><br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="1"> htmlとは？</span><hr class="heading-hr">
+まず１つ目に目次などです。<br><br>
 
-どうもこんにちは。<br>
-今回はhtml入門というのをやっていきます。<br><br>
+目次については、枠の角を丸めて、枠線をつけ、目次という文字の下に、仕切り線を引きました。<br>
+さらに、タイトルへとぶリンクについてしまう、下線を消しました。<br><br>
 
-今回扱う html とは、一体どういうものなのかを説明します。<br><br>
+<span class="Sheading" id="1.2">見出し・小見出し</span><br><br>
 
-html とは、<span class="ipt">ウェブサイトの構造を作るために使うプログラム(コード)のこと</span>です。<br><br>
+また、見出しについては、右に色付きの四角をつけ、線を引いてみました。<br>
+あと、小見出しについては、右に色付きの四角をつけただけです。<br><br>
 
-実は、このサイトも、他の色んなサイトも html で構成されています。<br>
-実際、html 以外にも css や javascript なども一緒に使われることが多いのですが。<br><br>
+<span class="Sheading" id="1.3"> サンプルコードの表示</span><br><br>
 
-そこで今回は、html に着目して説明をする、という感じです。<br><br>
+黒色の枠で囲み、文字を白色を基調にし、プログラミングっぽい色にしました。<br>
+また、結果の表示の仕方も、タブに囲まれたようにしました。<br><br>
 
-では、早速、まずは環境づくりから始めましょう！<br><br>
-
-<span class="heading-box">&ensp;</span><span class="heading-text" id="2"> 環境構築</span><hr class="heading-hr"><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.1"> htmlファイルの準備</span><br><br>
-
-ではまず、<span class="ipt">テキストエディタ</span>を開いてください。<br>
-なければ、メモ帳でもOKです。<br>
-windowsの場合はそのまま<strong>メモ帳</strong>という名前のアプリで、<br>
-chromebookの場合は <strong>&lt;t&gt;</strong> というアイコンのアプリです。<br>
-まぁ、書けて保存できたらいいです。<br><br>
-
-本格的にやりたい方は、 <strong>"Visual Studio Code"</strong> や <strong>"ATOM"</strong> というアプリもいいかもしれません。<br>
-これらは無料ですので、それを使いたい方はそれを調べてみてください。<br><br>
-
-そして、エディタを開いたら、保存をしてみてください。<br>
-メモ帳などで書いている方は拡張子(~<strong> .~~ </strong>の部分)を".html"にしてください。<br>
-そしたら、名前は何でもいいです。<br>
-たとえば、<strong>test.html</strong>なんかです。<br><br>
-
-そしたら、保存したhtmlファイルをブラウザ(chrome など)で開いてください。(作ったファイルをダブルクリック)<br><br>
-
-まだ、何も表示されません。<br>
-それでは、次にコーディングをしていっていきましょう！<br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.2"> 少しコーディング</span><br><br>
-
-それでは、次のコードを早速htmlファイルに打ち込んでみてください。<br><br>
-
-<div class="code"><code>
+例.<br>
+<div class="code">
+<code>
 &lt;!DOCTYPE html&gt;<br>
 <span class="r">&lt;html&gt;<br>
 &nbsp;&lt;head&gt;<br>
 &nbsp;&nbsp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
-&nbsp;&nbsp;&lt;title&gt;<span class="w">html入門</span>&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;<span class="w">test</span>&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;style&gt;<br>
+&nbsp;&nbsp;&nbsp;<span class="g">/*test*/</span><br>
+&nbsp;&nbsp;&nbsp;p<span class="w">{<span class="lg">color</span>:<span class="b">#ff0000</span>;}</span><br>
+&nbsp;&nbsp;&lt;/style&gt;<br>
 &nbsp;&lt;/head&gt;<br>
 &nbsp;&lt;body&gt;<br>
-&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&lt;p&gt;<span class="w">test</span>&lt;/p&gt;<br>
 &nbsp;&lt;/body&gt;<br>
-&lt;/html&gt;
-</span></code></div><br>
+&lt;/html&gt;</span>
+</code>
+</div>
+↓<br>
+ <span class="result-tab">test</span>
+ <div class="result-display">
+ <p style="color:#ff0000;">test</p>
+ </div><br><br>
 
-このコードを入力できたら、ファイルを保存して、ブラウザを更新してみてください。<br><br>
+<span class="Sheading" id="1.4">その他</span><br><br>
 
-しかし、これでも何も表示されません。<br>
-なぜでしょうか。<br><br>
-
-それは、bodyタグ(&lt;body&gt; と &lt;/body&gt; で囲まれている部分)の中に何も入力されてないからです。<br>
-しかし、headタグ の中の titleタグの中に <strong>html入門</strong> と書いてあるので、タブのところに <strong>html入門</strong> と表示されています。<br><br>
-
-ちなみにですけど、 titleタグ の中に入れた言葉がタブに入る言葉になります。<br><br>
-
-それでは、bodyタグの中に <strong>Hello World</strong> と入力して保存、ブラウザ更新してみてください。<br>
-すると、ブラウザに <strong>Hello World</strong> と表示されているのがわかります。<br><br>
-
-では、次でhtmlで色々なものを表示させてみましょう！<br><br>
-
-<span class="heading-box">&ensp;</span><span class="heading-text" id="3">いろんなタグ</span><hr class="heading-hr"><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.1">pタグ</span><br><br>
- 
-では最初に紹介するのは、、、 <small>ﾌﾟﾙﾙﾙﾙﾙﾙﾙﾙﾙﾙ ﾌﾟｺｰ　</small><strong>pタグ</strong> です。<small>　ｲｪｰｰｰｲ</small><br><br>
-
-この p は<span class="ipt">段落</span>を表す Paragraph の頭文字です。<br>
-この pタグ(<code>&lt;p&gt; ~ &lt;/p&gt;</code>) で "Hello World" を囲んでみてください。<br><br>
-
-プログラム例.
-<div class="code"><code>
-<span class="r"><span class="w">&lt;!DOCTYPE html&gt;</span><br>
-&lt;html&gt;<br>
-&ensp;&lt;head&gt;<br>
-&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
-&ensp;&ensp;&lt;title&gt;<span class="w">pタグ</span>&lt;/title&gt;<br>
-&ensp;&lt;/head&gt;<br>
-&ensp;&lt;body&gt;<br>
-&ensp;&ensp;&lt;p&gt;<span class="w">Hello World</span>&lt;/p&gt;<br>
-&ensp;&lt;/head&gt;<br>
-&lt;/html&gt;
-</span></code></div>
-
-すると、段落が形成されて、このようになります。<br>
-<span class="result-tab">pタグ</span><br>
-<div class="result-display"><p>Hello World</p></div><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.2">hタグ</span><br><br>
-
-次は <strong>hタグ</strong> です！<br>
-この h は見出しを表す heading の頭文字です。<br><br>
-
-この hタグ は pタグ と同じように文字を表示するタグなのですが、<br>
-hタグ は大きさを変えることができます。<br><br>
-
-大きさの変え方は、 h の次に数字をつけるだけです。<br>
-この数字は 1~6 までの整数で、<br>
-数字が小さいほど、文字の大きさは大きくなります。<br><br>
-
-では試しに、 h1で囲んでみましょう！<br>
-bodyタグの中にこのように打ってみてください。<br>
-<code class="border">&lt;h1&gt;h1タグ&lt;/h1&gt;</code><br><br>
-
-すると、下のような感じになると思います。<br>
-<span class="result-tab">h1タグ</span><div class="result-display"><h1>&ensp;h1タグ</h1></div><br>
-
-では、次は、 h2 でやってみましょう！<br>
-h1のときと同じように、このように打ってみてください<br>
-<code class="border">&lt;h2&gt;h2タグ&lt;/h2&gt;</code><br><br>
-
-すると、下のような感じになると思います。<br>
-<span class="result-tab">h2タグ</span><div class="result-display"><h2>&ensp;h2タグ</h2></div><br>
-
-このように、hタグで大きさを変えられるのですが、その一覧を作ってみました。<br>
-<div class="code"><code>
-&lt;!DOCTYPE html&gt;<span class="r"><br>
-&lt;html&gt;<br>
-&ensp;&lt;head&gt;<br>
-&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
-&ensp;&ensp;&lt;title&gt;<span class="w">hタグ</span>&lt;/title&gt;<br>
-&ensp;&lt;/head&gt;<br>
-&ensp;&lt;body&gt;<br>
-&ensp;&ensp;&lt;h1&gt;<span class="w">h1タグ</span>&lt;/h1&gt;<br>
-&ensp;&ensp;&lt;h2&gt;<span class="w">h2タグ</span>&lt;/h2&gt;<br>
-&ensp;&ensp;&lt;h3&gt;<span class="w">h3タグ</span>&lt;/h3&gt;<br>
-&ensp;&ensp;&lt;h4&gt;<span class="w">h4タグ</span>&lt;/h4&gt;<br>
-&ensp;&ensp;&lt;h5&gt;<span class="w">h5タグ</span>&lt;/h5&gt;<br>
-&ensp;&ensp;&lt;h6&gt;<span class="w">h6タグ</span>&lt;/h6&gt;<br>
-&ensp;&lt;/body&gt;<br>
-&lt;/html&gt;
-</span></code></div><br>
-
-<span class="result-tab">hタグ</span><div class="result-display">
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charest="UTF-8">
-  <title>hタグ</title>
- </head>
- <body>
-  <h1>h1タグ</h1>
-  <h2>h2タグ</h2>
-  <h3>h3タグ</h3>
-  <h4>h4タグ</h4>
-  <h5>h5タグ</h5>
-  <h6>h6タグ</h6>
- </body>
-</html>
-</div><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.3">aタグ</span><br><br>
- 
-次のタグはこちら！　<strong>aタグ</strong><br>
-こちらのタグは Anchor の頭文字を取ったもので、リンクの出発点や到達点を指定するタグです。<br><br>
-
-では、bodyタグ の中にこのように打ってみてください。<br>
-<code class="border">&lt;a href="https://google.com"&gt;google&lt;/a&gt;</code><br><br>
-
-すると、このように表示されると思います。<br>
-<span class="result-tab">aタグ</span>
-<div class="result-display"><a href="https://google.com">google</a></div><br><br>
-
-aタグに囲まれている文字列が表示され、その文字列をクリックすると、aタグの中の href という属性のサイトなどにとぶことができます。<br>
-では試しに、href= ~~ のところを下のようにに変えてみてください。<br>
-<code class="border">&lt;a href="https://tiger-math.github.io/yamath"&gt;yamath&lt;/a&gt;</code><br>
-すると、このyamathのホームページにとぶことができます。<br><br>
-
-更に、targetという属性を足して、下のようにすると、<br>
-<code class="border">&lt;a href="https://tiger-math.github.io/yamath" target="_blank"&gt;yamath&lt;/a&gt;</code><br><br>
-
-別のタブでそのリンクを開いてくれます。<br>
-<span class="result-tab">aタグ-about blank</span><div class="result-display"><a href="https://tiger-math.github.io/yamath" target="blank">yamath</a></div><br>
-
-実はこのサイトの目次や、押すとホームページにとぶ画像にも aタグ を使用しています。<br>
-便利なタグですね。<br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.4">imgタグ</span><br><br>
-
-次はこちら!!　<strong>imgタグ</strong>　です。<br>
-こちらは、画像を表示させたいときに使うタグです。<br><br>
-
-では、 bodyタグ の中に、このように打ってみてください。<br>
-<code class="border">&lt;img src="https://tiger-math.github.io/yamath/logo1.svg" alt="yamathのロゴ" height="100"&gt;</code><br><br>
-
-これをブラウザで実行すると、<br>
-<span class="result-tab">imgタグ</span>
-<div class="result-display" style="padding:10px;"><img src="https://tiger-math.github.io/yamath/logo1.svg" alt="yamathのロゴ favicon" height="100"></div><br>
-上のような画像が出ます。<br><br>
-
-このタグは終了タグ(&lt;/~~&gt;)がないので、 &lt;/img&gt; は書く必要はありません。<br><br>
-
-この、出てくる画像の調整方法ですが、<br>
-src="~~" の部分になんの画像を入れるのかを入力します。<br><br>
-
-今回はurlで指定しましたが、そのhtmlと同じファイルの中に入っている画像だったら、<br>
-urlではなく、名前を入力するだけで大丈夫です。(※拡張子も書きます)<br><br>
-
-そして、 height という属性で、高さを決められます。<br>
-同じように、 width という属性は、幅を決められます。<br>
-数字の単位は px です。<br><br>
-
-また、 alt という属性で、<br>
-その画像が発見されなかったとき、あるいは、文を音声で読み上げていくときに<br>
-なんと出力するかを決められます。<br><br>
-
-例えば、先程のyamathのロゴのurlを下のようになくしてみると、、、<br>
-<code class="border">&lt;img alt="yamathのロゴ" height="100"&gt;</code><br><br>
-
-画像が見つからないはずなので、下のようにalt属性に書かれているメッセージが出ます。<br>
-<span class="result-tab">imgタグ</span><div class="result-display" style="padding:10px;"><img alt="yamathのロゴ" height="100"></div><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.5">tableタグ</span><br><br>
-
-次は tableタグ です。<br>
-これは、表のタグです。<br><br>
-
-では早速、次のプログラムを打ってみてください<br><br>
-
-<div class="code"><code><span class="r">
-&lt;table <span class="lg">border</span>&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">1-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">1-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">2-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">2-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">3-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">3-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&lt;/table&gt;</span></code></div><br><br>
-
-すると、このような表ができると思います。<br>
-<span class="result-tab">tableタグ</span><div class="result-display">
-<table border>
- <tr>
-  <td>1-1</td>
-  <td>1-2</td>
- </tr>
- <tr>
-  <td>2-1</td>
-  <td>2-2</td>
- </tr>
- <tr>
-  <td>3-1</td>
-  <td>3-2</td>
- </tr>
-</table><br></div><br>
-
-この tableタグ の中に入っている<br>
-trタグ が表の列を、<br>
-tdタグ が表の中身(セル)を記述しています。<br><br>
-
-当然、 trタグ、tdタグ の数を増やせば、<br>
-表が大きくなります。<br><br>
-
-また、tableタグの属性に、border というものがありますが、<br>
-これを外すと、表の周りの枠がなくなります。<br><br>
-
-<div class="code"><code><span class="r">
-&lt;table&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">1-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">1-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">2-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">2-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&ensp;&lt;tr&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">3-1</span>&lt;/td&gt;<br>
-&ensp;&ensp;&lt;td&gt;<span class="w">3-2</span>&lt;/td&gt;<br>
-&ensp;&lt;/tr&gt;<br>
-&lt;/table&gt;</span></code></div><br>
-
-<span class="result-tab">tableタグ-borderなし</span><div class="result-display">
-<table>
- <tr>
-  <td>1-1</td>
-  <td>1-2</td>
- </tr>
- <tr>
-  <td>2-1</td>
-  <td>2-2</td>
- </tr>
- <tr>
-  <td>3-1</td>
-  <td>3-2</td>
- </tr>
-</table><br></div><br>
-
-これは、文字や数字を並べるときに便利ですね。<br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.6">ol,ulタグ</span><br><br>
-
-ol,ulタグはリストを作るタグで、<br>
-olタグは番号付きリストを、<br>
-ulタグは箇条書きをしてくれます。<br><br>
-
-試しに、次のコードを打ってみてください<br><br>
-
-<div class="code"><code class="r">
-&lt;h2&gt;<span class="w">olタグ</span>&lt;/h2&gt;<br>
-&lt;ol&gt;<br>
-&ensp;&lt;li&gt;<span class="w">項目1</span>&lt;/li&gt;<br>
-&ensp;&lt;li&gt;<span class="w">項目2</span>&lt;/li&gt;<br>
-&lt;/ol&gt;<br><br>
-&lt;h2&gt;<span class="w">ulタグ</span>&lt;/h2&gt;<br>
-&lt;ul&gt;<br>
-&ensp;&lt;li&gt;<span class="w">項目1</span>&lt;/li&gt;<br>
-&ensp;&lt;li&gt;<span class="w">項目2</span>&lt;/li&gt;<br>
-&lt;/ul&gt;</code></div><br>
-
-すると、このようなリストができると思います。<br>
-<span class="result-tab">ol,ulタグ</span><div class="result-display">
-<h2>olタグ</h2>
-<ol>
- <li>項目1</li>
- <li>項目2</li>
-</ol>
-
-<h2>ulタグ</h2>
 <ul>
- <li>項目1</li>
- <li>項目2</li>
-</ul></div><br>
-
-ol,ulタグの中で、liタグで項目を囲んで、リストを作ります。<br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.7"> コメントアウト</span><br><br>
-
-htmlで、コメントを残しておきたい、という要望に答える方法をお伝えします。<br><br>
-
-それは、 <code class="border">&lt;!コメント&gt;</code> です。<br><br>
-
-使用例<br>
-
-<div class="code"><code>
-...<span class="g">&lt;!pタグで、段落を作る&gt;</span><br>
-<span class="r">&lt;p&gt;<span class="w">pタグ</span>&lt;/p&gt;</span>...
-</code></div><br><br>
-
-<span class="heading-box">&ensp;</span><span class="heading-text" id="4">終わりに</span><br><br>
-
-htmlは面白いので、興味のある方はこれからも、どんどん進めてってください！<br>
-では、さようなら。
+<li>強調の仕方を少し変えました</li>
+今まで　<strong>太字</strong><br>
+これから　<strong>太字</strong> + <span class="ipt">マーカー</span> + <span class="u">アンダーライン</span>
+<li><span class="border">囲まれるのを作りました</span></li>
+<li>404ページ(Not Found)を作りました</li>
+※404ページとは、そのサイトが見つからなかったときに出るページのことです
+<li>ホームページで、タグ集みたいなのを作りました</li>
+<li>ロゴの下の字を、大文字にし、セリフ体にしました</li>
+<li>他の記事を表示するときのレイアウトを変えました。</li>
+イメージ<br>
+ <div class="article 0"></div>
+</ul>
 
 <div class="ad" id="ad"></div>
-<script src="page.js"></script>
+<script src="../info.js"></script>
+<script src="../page.js"></script>
 </body>
-</html>
