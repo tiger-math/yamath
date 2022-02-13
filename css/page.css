@@ -2,10 +2,6 @@ a{text-decoration:none; color:black;}
 
 .a{text-decoration:underline; color:blue;}
 
-.logo{
- text-align: left;
-}
-
 .site-title{
  background-color: #66ccff;
  text-align: center;
@@ -43,7 +39,13 @@ body{
  border: 1px solid;
 }
 
-.contents{
+button.contents{
+ background: none;
+ border: none;
+ font-size: 24px;
+}
+
+hr.contents{
  border-width: 1px 0px 0px 0px;
  border-style: solid;
  border-color: #999999;
@@ -54,12 +56,12 @@ body{
  background-color: #ffe4b3;
 }
 
-.subheading-box{
+.Sheading-box{
  font-size: 40px;
  background-color: #f7ccff;
 }
 
-.heading-text{
+.heading,.Sheading{
  font-size: 40px;
  font-weight: bolder;
 }
