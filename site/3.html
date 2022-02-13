@@ -1,45 +1,8 @@
-<html>
-<head>
-<script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<link rel="stylesheet" href="page.css">
-<link rel="shortcut icon" href="ロゴ2.png">
-<div class="site-title">
- <a href="index.html" class="logo">
-  <img src="logo1.svg" height="71.43" align="left">
- </a>
-  <span class="serif">YAMATH</span>
-</div>
-<title>css入門|YAMATH</title>
-</head>
-<body class="body"><br>
+<head><meta charset="UTF-8"></head><body>
+<span class="heading" id="1">準備</span>
+<span class="Sheading" id="1.1">cssとは？</span>
 
- <span class="page-title">css入門</span>　<span class="page-tag">最終更新:2022.1.10　<a href="tag-入門.html">#入門</a>　<a href="tag-css.html">#css</a>　<a href="tag-プログラミング.html">#プログラミング</a></span><br><br>
-
-<div class="page-contents">
-<h2>目次</h2><hr class="contents">
-　1. <a href="#1">準備</a><br>
-　　1.1 <a href="#1.1">cssとは？</a><br>
-　　1.2 <a href="#1.2">環境構築</a><br>
-　2. <a href="#2">cssの使い方</a><br>
-　　2.1 <a href="#2.1">spanタグとdivタグ</a><br>
-　　2.2 <a href="#2.2">文字色の変更</a><br>
-　　2.3 <a href="#2.3">タグの装飾</a><br>
-　3. <a href="#3">色々なプロパティ</a><br>
-　　3.1 <a href="#3.1">color</a><br>
-　　3.2 <a href="#3.2">background-color</a><br>
-　　3.3 <a href="#3.3">font-size</a><br>
-　　3.4 <a href="#3.4">text-decoration</a><br>
-　4. <a href="#4">最後に</a>
-　
-</div><br>
-
-<span class="heading-box">&ensp;</span><span class="heading-text" id="1"> 準備</span><hr class="heading-hr"><br><br>
-
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1.1"> cssとは？</span><br><br>
-
-<a href="html入門.html" class="a">html入門</a>というページで、<br>
+<a href="3.html" class="a">html入門</a>というページで、<br>
 <span class="border">サイトを構成しているのは、html だ。</span><br>
 というようなことを言ったと思いますが、<br>
 html だけでは、<span class="ipt">とても質素なものしかできない</span>です。<br><br>
@@ -47,21 +10,15 @@ html だけでは、<span class="ipt">とても質素なものしかできない
 そこで登場するのが、飾り付けをしてくれる、 <strong>css</strong>です。<br><br>
 
 この YAMATH でも、css を使っていて、cssを使わないと、下のように、質素になってしまいます。<br>
-<a href="YAMATH%20css抜き.png" title="YAMATH css抜き" target="_blank"><img src="YAMATH css抜き.png" width="50%"></a><br><br>
+<a href="../image/0.png" title="YAMATH css抜き" target="_blank"><img src="../image/0.png" width="50%"></a><br><br>
 
 それでは早速、css の使い方を見ていきましょう。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1.2"> 環境構築</span><br><br>
+<span class="Sheading" id="1.2">環境構築</span>
 
 では、まずhtmlファイルを準備しましょう。<br>
 準備の仕方は、コチラ↓
-<div class="article">
- <a href="html入門.html#2.1" title="html入門" target="_blank">
-  <img src="html.png" width="150px"><br>
-  <strong>html入門</strong><br>
-  <span class="article-text">どうもこんにちは。今回はhtml入門というのをやっ...</span>
- </a>
-</div><br>
+<div class="article 2"></div><br>
 
 そしたら、次は、headの中に <span class="border">&lt;link rel="stylesheet" href="~~.css"&gt;</span> を入れます。<br>
 このプログラムを入れることで、cssファイルを読み込むことができます。<br><br>
@@ -88,9 +45,9 @@ index.html
 
 それでは次項で、css を使ってみましょう！<br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="2"> cssの使い方</span><hr class="heading-hr"><br><br>
+<span class="heading" id="2">cssの使い方</span>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.1"> spanタグとdivタグ</span><br><br>
+<span class="Sheading" id="2.1">spanタグとdivタグ</span><br><br>
 
 まず、css を使うときには、<span class="u">どこにどの飾り付けを適用させるか</span>を明記しないといけません。<br><br>
 
@@ -133,7 +90,7 @@ index.html<br>
 
 それでは、次の項で、実際に少し飾り付けをしてみましょう。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.2"> 文字色の変更</span><br><br>
+<span class="Sheading" id="2.2"> 文字色の変更</span>
 
 それでは、index.css の方に移って飾り付けを指定しましょう。<br>
 今回は、文字色を赤色に変更させたいと思います。<br><br>
@@ -163,7 +120,7 @@ index.css<br>
 </code></div>
 ※上の改行や空白は見やすさのためなので、<code class="border">.セレクタ{プロパティ:値; ....}</code>でも大丈夫です。また、一つの中括弧の中に、複数のプロパティを指定しても大丈夫です。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2.3"> タグの装飾</span><br><br>
+<span class="Sheading" id="2.3"> タグの装飾</span>
 
 「このタグのときはずっとこの装飾をしたい！」<br>
 という要望に応える書き方を紹介します。<br>
@@ -180,9 +137,8 @@ index.css<br>
 
 このとき、aタグのところに <span class="border">class="a"</span> と書かなくて大丈夫です。<br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="3"> 色々なプロパティ</span><hr class="heading-hr"><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.1"> color</span><br><br>
+<span class="heading" id="3"> 色々なプロパティ</span>
+<span class="Sheading" id="3.1">color</span>
 
 先程使った colorプロパティ をもう少し詳しくやります。<br><br>
 
@@ -209,7 +165,7 @@ index.css<br>
 それが、コチラです　→<a href="https://www.colordic.org/" class="a">原色大辞典</a><br>
 ありがたいですね。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.2"> background-color</span><br><br>
+<span class="Sheading" id="3.2">background-color</span>
 
 前項と関係があるプロパティです。<br><br>
 
@@ -240,7 +196,7 @@ font-size というプロパティは次項で説明します。<br>
 結局、あの四角は、空白に背景色をつけた、という感じです。<br>
 それで、四角みたいにしてます。実際四角ですね。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.3"> font-size</span><br><br>
+<span class="Sheading" id="3.3">font-size</span>
 
 これは前項で少し触れましたが、文字の大きさを指定するプロパティです。<br><br>
 
@@ -253,7 +209,7 @@ px というのは、デジタル画像を構成する最小単位です。<br>
 使用例
 <div class="code"><code><span class="lg">font-size</span>: <span class="b">24px</span>;</code></div><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="3.4"> text-decoration</span><br><br>
+<span class="Sheading" id="3.4">text-decoration</span>
 
 次は、文字の装飾です。<br><br>
 
@@ -299,13 +255,13 @@ px というのは、デジタル画像を構成する最小単位です。<br>
 <p style="text-decoration:blink;">点滅(非推奨)</p>
 </div><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="4"> 最後に</span><br><br>
+<span class="heading" id="4">最後に</span>
 
 cssには他にもたくさんのプロパティがあるので、調べてみてくださいね。<br>
 今回はここらへんで閉じます。<br>
 さようなら<br>
 
 <div class="ad" id="ad"></div>
-<script src="page.js"></script>
+<script src="../info.js"></script>
+<script src="../page.js"></script>
 </body>
-</html>
