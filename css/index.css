@@ -1,0 +1,79 @@
+.html{
+ word-wrap: break-word;
+ white-space: pre-wrap;
+}
+
+.logo{
+ text-align: left;
+}
+
+a{text-decoration:none;color:black;}
+
+.title{
+ background-color: #66ccff;
+ text-align: center;
+ color: red;
+ font-size: 50px;
+ height: 71.43px;
+ font-weight: bolder;
+ font-family: ＭＳ ゴシック;
+}
+
+.body{
+ background-color: #e1faf0;
+ font-size: 20px;
+ margin-left: 10px;
+ margin-right: 10px;
+ word-break: break-word;
+}
+
+.explain{
+ background-color: #fddea5;
+ padding-left: 10px;
+ word-break: break-word;
+}
+
+.yamath{
+ color: red;
+ font-weight: bolder;
+}
+
+.explain-end{
+ font-size: 30px;
+ text-decoration: underline;
+}
+
+.all-page{
+ background-color: #fffae6;
+ padding: 10px;
+ word-break: break-all;
+}
+
+.page{
+ border-radius: 10px;
+ background-color: #ccffff;
+ font-size: 30px;
+ padding: 5px;
+}
+
+.page-tag{
+ padding-top: 10px;
+ font-size: 20px;
+}
+
+.page-name{
+ padding-left: 5px;
+ font-size: 50px;
+ text-decoration: underline;
+ color: blue;
+}
+
+.page-img{
+ text-align: left;
+}
+
+.tag{
+ background-color: #ffcccc;
+ font-size: 24px;
+ padding: 0 10 10 10;
+}
