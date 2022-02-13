@@ -1,39 +1,4 @@
-<html>
-<head>
-<script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<link rel="stylesheet" href="page.css">
-<link rel="shortcut icon" href="ロゴ2.png">
-<div class="site-title">
- <a href="index.html" class="logo">
-  <img src="logo1.svg" height="71.43" align="left">
- </a>
-  <span class="serif">YAMATH</span>
-</div>
-<title>MathJaxについて|YAMATH</title>
-</head>
-<body class="body"><br>
-
-<span class="page-title">MathJaxについて</span>　<span class="page-tag">最終更新: 2021.12.18　<a href="tag-プログラミング.html">#プログラミング</a>　<a href="tag-数学.html">#数学</a>　<a href="tag-html.html">#html</a></span><br><br>
-
-<div class="page-contents">
-<h2>目次</h2><hr class="contents">
-　1. <a href="#1">MathJaxの使い方</a><br>
-　　1-1. <a href="#1-1">準備</a><br>
-　　1-2. <a href="#1-2">分数</a><br>
-　2. <a href="#2">色々な数式</a><br>
-　　2-1. <a href="#2-1">累乗</a><br>
-　　2-2. <a href="#2-2">平方根</a><br>
-　　2-3. <a href="#2-3">累乗根</a><br>
-　　2-4. <a href="#2-4">シグマ</a><br>
-　　2-5. <a href="#2-5">積分</a><br>
-　　2-6. <a href="#2-6">極限</a><br>
-　　2-7. <a href="#2-7">複数の式変形</a><br>
-　　2-8. <a href="#2-8">場合分け</a><br>
-　　2-9. <a href="#2-9">行列</a><br>
-　3. <a href="#3">終わりに</a>
-</div><br>
-
+<head><meta charset="UTF-8"></head><body>
 どうもこんにちは。<br><br>
 今回は、
 \[
@@ -45,19 +10,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 では、次項で具体的にどのようにすれば MathJax を使えるのか、見ていきましょう！<br><br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="1"> MathJaxの使い方</span><hr class="heading-hr"><br><br>
-
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1-1"> 準備</span><br><br>
+<span class="heading" id="1">MathJaxの使い方</span>
+<span class="Sheading" id="1.1">準備</span>
  
 それでは早速 MathJax を使っていくのですが、その前に html ファイルを作ってください。<br>
 html ファイルの作り方についてはこちらをご参照ください。
-<div class="article">
-<a href="html入門.html" title="html入門">
-    <img src="html.png" width="150px"><br>
-	 <strong>html入門</strong><br>
-	 <span class="article-text">どうもこんにちは。今回はhtml入門というのをやっ...</span>
-  </a>
-  </div><br><br>
+<div class="article 2"></div>
 
 早速 html ファイルが作れたら、こちらのコードを入力してください。<br><br>
 
@@ -84,7 +42,7 @@ src</span><span class="w">=</span><span class="y">"https://cdn.jsdelivr.net/npm/
 
 ...とブラウザに何かを表示することができたので、今度は数式を表示させてみましょう！<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="1-2"> 分数</span><br><br>
+<span class="Sheading" id="1.2">分数</span>
  
 では手始めに、分数からやっていきましょう。<br>
  bodyタグ の中に<br>
@@ -100,15 +58,15 @@ src</span><span class="w">=</span><span class="y">"https://cdn.jsdelivr.net/npm/
 
 では、次項で、分数以外のものもやっていきましょう！<br><br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="2"> 色々な数式</span><hr class="heading-hr"><br><br>
+<span class="heading" id="2">色々な数式</span>
 
 それではどんどんやっていきます。<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-1"> 累乗</span><br><br>
+<span class="Sheading" id="2.1">累乗</span>
  
 次は累乗です。<br><code class="border">\(底^{指数}\)</code>　→　\(底^{指数}\)<br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-2"> 平方根</span><br><br>
+<span class="Sheading" id="2.2">平方根</span>
  
 次は平方根です。<br><code class="border">\(\sqrt{数})</code>　→　\(\sqrt{数}\)<br><br>
 
@@ -131,12 +89,12 @@ src</span><span class="w">=</span><span class="y">"https://cdn.jsdelivr.net/npm/
 <li>\tag{a} で (a)</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-3"> 累乗根</span><br><br>
+<span class="Sheading" id="2.3">累乗根</span>
  
 次は累乗根です。<br><code class="border">
 \(\sqrt[n]{数}\)</code>→<span class="result-s">\(\sqrt[n]{数}\)</span><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-4"> シグマ</span><br><br>
+<span class="Sheading" id="2.4">シグマ</span>
  
 次はΣ(シグマ)です。<br><div class="code"><code>
 \[<br>
@@ -155,7 +113,7 @@ src</span><span class="w">=</span><span class="y">"https://cdn.jsdelivr.net/npm/
 <li>a_n で \(a_n\) となる。</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-5"> 積分</span><br><br>
+<span class="Sheading" id="2.5">積分</span>
  
 次は積分です。<br><div class="code"><code>
 \[<br>
@@ -173,7 +131,7 @@ src</span><span class="w">=</span><span class="y">"https://cdn.jsdelivr.net/npm/
 <li>不定積分なら、\int f(x) \, dx で \(\int f(x) \, dx\)</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-6"> 極限</span><br><br>
+<span class="Sheading" id="2.6">極限</span>
  
 次は極限です。<br><div class="code"><code>
 \[<br>
@@ -191,7 +149,7 @@ f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
 <li>\varDelta で \(\varDelta\)</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-7"> 複数の式変形</span><br><br>
+<span class="Sheading" id="2.7">複数の式変形</span>
  
 次は3つ以上の式変形です。<br><div class="code"><code>
 \[<br>
@@ -219,7 +177,7 @@ f'(x) = \lim_{\varDelta x \to 0} \frac{f(x + \varDelta x) - f(x)}{h}<br>
 <li>\cos \sin でそれぞれ \(\cos,\sin\)</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-8"> 場合分け</span><br><br>
+<span class="Sheading" id="2.8">場合分け</span>
  
 次は場合分けです。<br><div class="code"><code>
 \[<br>
@@ -245,7 +203,7 @@ x & x \ge 0 のとき \\
 <li>&#92;lt,&#92;gt,&#92;le,&#92;ge: 不等号 &lt;,&gt;,&le;,&ge;</li>
 </ul><br><br>
 
-　　<span class="subheading-box">&ensp;</span><span class="heading-text" id="2-9"> 行列</span><br><br>
+<span class="Sheading" id="2.9">行列</span>
  
 次は行列です。<br><div class="code"><code>
 \(n \times n\)行列<br>
@@ -286,15 +244,14 @@ a_{n1} & a_{n2} & \ldots & a_{nn}
 <li>matrix: カッコなし</li>
 </ul><br><br>
 
-<span class="heading-box">&ensp;</span><span class="heading-text" id="3">終わりに</span><hr class="heading-hr"><br><br>
-
+<span class="heading" id="3">終わりに</span>
 いかがでしたでしょうか。今回やった<strong>MathJax</strong>は数式を書くときにとても役に立つと思います。<br>
 「数式をブラウザで書きたい！」と思ったら、またどうぞ。<br>
 それでは、良いプログラミングライフを！<br><br>
 
-<span class="underline">参考文献: <a href="https://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf" class="a">https://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf</a></span><br><br>
+参考文献: <a href="https://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf" class="link"></a><br><br>
 
 <div id="ad" class="ad"></div>
-<script src="page.js"></script>
+<script src="../info.js"></script>
+<script src="../page.js"></script>
 </body>
-</html>
