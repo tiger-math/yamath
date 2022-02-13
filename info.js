@@ -39,26 +39,10 @@ const site = [
 
 const ad = [2,0]
 
-const heading = [
-  [
-	 ['MathJaxの使い方','準備','分数'],
-	 ['色々な数式','累乗','平方根','累乗根','シグマ','積分','極限','複数の式変形','場合分け','行列'],
-	 ['終わりに']
-  ],
-  [
-    ['修正点','目次','見出し・小見出し','サンプルコードの表示','その他']
-  ],
-  [
-    ['htmlとは？'],
-	 ['環境構築','htmlファイルの準備','少しコーディング'],
-	 ['いろんなタグ','pタグ','hタグ','aタグ','imgタグ','tableタグ','ol,ulタグ','コメントアウト'],
-	 ['終わりに']
-  ]
-]
-
 const $doc = document;
 const $file_name = window.location.href.split('/').pop();
 let text_box,new_element;
+let rect,position;
 function create(textBox,element) {
   text_box = textBox;
   new_element = $doc.createElement(element);
