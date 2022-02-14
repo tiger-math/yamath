@@ -27,19 +27,19 @@ html だけでは、<span class="ipt">とても質素なものしかできない
 そうして、index.htmlの中を下のようにします。<br><br>
 
 index.html
-<div class="code"><code>
+<div class="code">
 &lt;!DOCTYPE html&gt;<br>
-<span class="r">&lt;html&gt;<br>
+<r>&lt;html&gt;<br>
 &ensp;&lt;head&gt;<br>
-&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
-&ensp;&ensp;<span class="border" style="border-color:white;">&lt;link <span class="lg">rel</span><span class="w">=</span><span class="y">"stylesheet"</span> <span class="lg">href</span><span class="w">=</span><span class="y">"index.css"</span>&gt;</span><br>
-&ensp;&ensp;&lt;title&gt;<span class="w">css入門</span>&lt;/title&gt;<br>
+&ensp;&ensp;&lt;meta <lg>charest</lg><w>=</w><y>"UTF-8"</y>&gt;<br>
+&ensp;&ensp;<span class="border" style="border-color:white;">&lt;link <lg>rel</lg><w>=</w><y>"stylesheet"</y> <lg>href</lg><w>=</w><y>"index.css"</y>&gt;</span><br>
+&ensp;&ensp;&lt;title&gt;<w>css入門</w>&lt;/title&gt;<br>
 &ensp;&lt;/head&gt;<br>
 &ensp;&lt;body&gt;<br>
 &ensp;&ensp;<br>
 &ensp;&lt;/body&gt;<br>
 &lt;/html&gt;
-</span></code></div><br>
+</r></div><br>
 
 これで、index.html に、index.css を読み込むことが、できました。<br><br>
 
@@ -66,12 +66,12 @@ index.html
 ではここで、練習として、"css" というグループ名をつけて、飾り付けをしてみましょう。<br><br>
 
 index.html<br>
-<div class="code"><code>
+<div class="code">
 &lt;!DOCTYPE html&gt;<br>
-<span class="r">&lt;html&gt;<br>
+<r>&lt;html&gt;<br>
 &ensp;&lt;head&gt;<br>
-&ensp;&ensp;&lt;meta <span class="lg">charest</span><span class="w">=</span><span class="y">"UTF-8"</span>&gt;<br>
-&ensp;&ensp;&lt;link <span class="lg">rel</span><span class="w">=</span><span class="y">"stylesheet"</span> <span class="lg">href</span><span class="w">=</span><span class="y">"index.css"</span>&gt;<br>
+&ensp;&ensp;&lt;meta <lg>charest</lg><w>=</w><y>"UTF-8"</y>&gt;<br>
+&ensp;&ensp;&lt;link <lg>rel</lg><w>=</w><y>"stylesheet"</y> <lg>href</lg><span class="w">=</span><span class="y">"index.css"</span>&gt;<br>
 &ensp;&ensp;&lt;title&gt;<span class="w">css入門</span>&lt;/title&gt;<br>
 &ensp;&lt;/head&gt;<br>
 &ensp;&lt;body&gt;<br>
@@ -80,7 +80,7 @@ index.html<br>
 &ensp;&ensp;&lt;/span&gt;</div>
 &ensp;&lt;/body&gt;<br>
 &lt;/html&gt;
-</span></code></div>
+</r></div>
 ↓<br>
 <span class="result-tab">css入門</span><div class="result-display">
 <span><p>css体験</p></span></div><br>
@@ -96,10 +96,10 @@ index.html<br>
 今回は、文字色を赤色に変更させたいと思います。<br><br>
 
 index.css<br>
-<div class="code"><code>
+<div class="code">
 .css{<br>
-&ensp;<span class="lg">color</span>: <span class="r">red</span>;<br>
-}</code></div>
+&ensp;<lg>color</lg>: <r>red</r>;<br>
+}</div>
 ↓<br>
 <span class="result-tab">css入門</span><div class="result-display">
 <p style="color:red">css体験</p></div><br>
@@ -113,11 +113,11 @@ index.css<br>
 値(先程だと "red" )を書いたあと、"<strong>;</strong>" をつけます。<br><br>
 
 結局、こんな感じになります。
-<div class="code"><code>
+<div class="code">
 .セレクタ(グループ名のこと){<br>
-&ensp;&ensp;<span class="lg">プロパティ</span>: <span class="b">値</span>; ....<br>
+&ensp;&ensp;<lg>プロパティ</lg>: <bl>値</bl>; ....<br>
 }
-</code></div>
+</div>
 ※上の改行や空白は見やすさのためなので、<code class="border">.セレクタ{プロパティ:値; ....}</code>でも大丈夫です。また、一つの中括弧の中に、複数のプロパティを指定しても大丈夫です。<br><br>
 
 <span class="Sheading" id="2.3"> タグの装飾</span>
@@ -130,10 +130,10 @@ index.css<br>
 
 例として、先程の aタグ はすべて赤色にする、は下のようにすればできます。
 
-<div class="code"><code>
-<span class="r">a</span>{<br>
-&ensp;<span class="lg">color</span>: <span class="r">red</span>;<br>
-}</code></div><br>
+<div class="code">
+<r>a</r>{<br>
+&ensp;<lg>color</lg>: <r>red</r>;<br>
+}</div><br>
 
 このとき、aタグのところに <span class="border">class="a"</span> と書かなくて大丈夫です。<br><br>
 
@@ -152,11 +152,11 @@ index.css<br>
 そして、それをどのように調節したのか、というのを表す物があり、それは、<span class="ipt">カラーコード</span>と言います。<br><br>
 
 そのカラーコードを使って、下のように色を指定することができます。<br>
-<div class="code"><code>
+<div class="code">
 .セレクタ{<br>
-&ensp;&ensp;<span class="lg">color</span>: <span class="b">#カラーコード</span>;<br>
+&ensp;&ensp;<lg>color</lg>: <bl>#カラーコード</bl>;<br>
 }
-</code></div><br>
+</div><br>
 
 そうすれば、自分の好きな色が、自由に出せますね。<br>
 しかし、その色のカラーコードが分からなければ、元も子もありません。<br><br>
@@ -172,23 +172,23 @@ index.css<br>
 こいつは、背景色を指定してくれます。<br>
 そして、その色は前回同様、redなどの単語か、カラーコードで指定します。<br><br>
 
-<div class="code"><code>
-<span class="lg">backgroud-color</span>: <span class="blue">色</span>;
-</code></div><br>
+<div class="code">
+<lg>backgroud-color</lg>: <bl>色</bl>;
+</div><br>
 
 ちなみに、このサイトの見出し小見出しに出ている色付きの四角もこの background-color をつかっています。<br><br>
 
 コードは下のような感じです。<br>
 html
-<div class="code"><code class="r">&lt;span <span class="lg">class</span><span class="w">=</span><span class="y">"heading-box"</span>&gt;<span class="b">&amp;ensp;</span>&lt;/span&gt;</code></div>
+<div class="code"><r>&lt;span <lg>class</lg><w>=</w><y>"heading-box"</y>&gt;<bl>&amp;ensp;</bl>&lt;/span&gt;</r></div>
 
 css
-<div class="code"><code>
+<div class="code">
 .heading-box{<br>
-&ensp;<span class="lg">font-size</span>: <span class="b">40px</span>;<br>
-&ensp;<span class="lg">background-color</span>: <span class="b">#ffe4b3</span>;<br>
+&ensp;<lg>font-size</lg>: <bl>40px</bl>;<br>
+&ensp;<lg>background-color</lg>: <bl>#ffe4b3</bl>;<br>
 }
-</code></div><br>
+</div><br>
 
 font-size というプロパティは次項で説明します。<br>
 また、&amp;ensp; というのは、半角スペースを表します。<br><br>
@@ -207,7 +207,7 @@ px というのは、デジタル画像を構成する最小単位です。<br>
 これらの一点の大きさを px としています。<br><br>
 
 使用例
-<div class="code"><code><span class="lg">font-size</span>: <span class="b">24px</span>;</code></div><br>
+<div class="code"><lg>font-size</lg>: <bl>24px</bl>;</div><br>
 
 <span class="Sheading" id="3.4">text-decoration</span>
 
@@ -224,26 +224,26 @@ px というのは、デジタル画像を構成する最小単位です。<br>
 の4つです。<br><br>
 
 プログラムは下のようです。
-<div class="code"><code>
-<span class="g">/*下線*/</span><br>
+<div class="code">
+<g>/*下線*/</g><br>
 .underline{<br>
-&ensp;<span class="lg">text-decoration</span>: <span class="b">underline</span>;<br>
+&ensp;<lg>text-decoration</lg>: <bl>underline</bl>;<br>
 }<br><br>
 
-<span class="g">/*上線*/</span><br>
+<g>/*上線*/</g><br>
 .overline{<br>
-&ensp;<span class="lg">text-decoration</span>: <span class="b">overline</span>;<br>
+&ensp;<lg>text-decoration</lg>: <bl>overline</bl>;<br>
 }<br><br>
 
-<span class="g">/*取り消し線*/</span><br>
+<g>/*取り消し線*/</g><br>
 .line-through{<br>
-&ensp;<span class="lg">text-decoration</span>: <span class="b">line-through</span>;<br>
+&ensp;<lg>text-decoration</lg>: <bl>line-through</bl>;<br>
 }<br><br>
 
-<span class="g">/*点滅(非推奨)*/</span><br>
+<g>/*点滅(非推奨)*/</g><br>
 .blink{<br>
-&ensp;<span class="lg">text-decoration</span>: <span class="b">blink</span>;<br>
-}</code></div>
+&ensp;<lg>text-decoration</lg>: <bl>blink</bl>;<br>
+}</div>
 
 そして、下のように装飾されます。<br><br>
 
@@ -254,6 +254,8 @@ px というのは、デジタル画像を構成する最小単位です。<br>
 <p style="text-decoration:line-through;">取り消し線</p>
 <p style="text-decoration:blink;">点滅(非推奨)</p>
 </div><br>
+
+<span class="Sheading" id="3.5">a</span>
 
 <span class="heading" id="4">最後に</span>
 
