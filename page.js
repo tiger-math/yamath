@@ -10,6 +10,8 @@ const $article = $doc.getElementsByClassName('article');
 let $articleNo,$articleA;
 const $ad = $doc.getElementById('ad');
 let $ad_i;
+const $code = $doc.getElementsByClassName('code');
+let $code_text,$code_tag;
 
 //---------------header---------------
 //titleタグ作成
@@ -252,5 +254,17 @@ for (i=0; i<2; i++) {
   create($articleA,'span');
   new_element.className = 'article-text';
   new_element.innerText = site[ad[i]].text;
+  apC();
+}
+
+//---------------code---------------
+for (i=0; i<$code.length; i++) {
+  //中身消去
+  $code_text = $code[i].innerHTML;
+  $code[i].innerHTML = '';
+  
+  //codeタグ作成
+  create($code[i],'code');
+  new_element.innerHTML = $code_text;
   apC();
 }
