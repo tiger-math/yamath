@@ -196,7 +196,7 @@ for (i=0; i<$article.length; i++) {
   
   //アイコン作成
   create($articleA,'img');
-  new_element.src = '../image/icon/' + site[articleNo].icon;
+  new_element.src = '../image/icon/' + img[site[articleNo].icon];
   new_element.width = 150;
   apC();
   
