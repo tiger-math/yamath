@@ -235,7 +235,7 @@ for (i=0; i<2; i++) {
   
   //アイコン作成
   create($articleA,'img');
-  new_element.src = '../image/icon/' + site[ad[i]].icon;
+  new_element.src = '../image/icon/' + img[site[ad[i]].icon];
   new_element.width = 150;
   apC();
   
