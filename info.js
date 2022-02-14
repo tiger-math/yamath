@@ -5,7 +5,16 @@ const tag = [
   'YAMATH',
   'アップデート',
   '入門',
-  'css'
+  'css',
+  'javascript'
+]
+
+const img = [
+  'math.png',
+  'logo2.png',
+  'html.png',
+  'css.jpg',
+  'js.jpg'
 ]
 
 const site = [
@@ -13,27 +22,27 @@ const site = [
 	 name: 'MathJaxについて',
     tag: [0,1,2],
     date: '2021.12.18',
-    icon: 'math.png',
+    icon: 0,
 	 text: '今回は~~のように数式をでhtmlで表示する方法を紹...'
   },
   {
 	 name: '2022年大型アップデート',
     tag: [3,4],
     date: '2022.01.02',
-    icon: 'logo2.png'
+    icon: 1
   },
   {
     name: 'html入門',
     tag: [0,2,5],
     date: '2022.01.05',
-    icon: 'html.png',
+    icon: 2,
 	 text: '今回はhtml入門というのをやっていきたいと思いま...'
   },
   {
     name: 'css入門',
     tag: [0,6,5],
     date: '2022.01.10',
-    icon: 'css.jpg'
+    icon: 3
   }
 ];
 
