@@ -68,7 +68,7 @@ for (i=0; i<site.length; i++) {
 	 create($page_img[0],'img');
 	 new_element.width = 60;
 	 new_element.height = 60;
-	 new_element.src = './image/icon/' + site[i].icon;
+	 new_element.src = './image/icon/' + img[site[i].icon];
 	 apC();
 	 
 	 //ページへ飛ぶリンク作成
