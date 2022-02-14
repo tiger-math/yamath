@@ -116,7 +116,7 @@ hr.contents{
 }
 
 /*color*/
-.r{color:#f92672;} .lg{color:#a6e22e;} .b{color:#ae81ff;} .g{color:#75715e;} .y{color:#e6db74;} .w{color:#f8f8f2;}
+r{color:#f92672;} lg{color:#a6e22e;} bl{color:#ae81ff;} g{color:#75715e;} y{color:#e6db74;} w{color:#f8f8f2;}
 
 .result-tab{
  padding: 0px 10px 0px 10px;
