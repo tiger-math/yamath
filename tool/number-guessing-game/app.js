@@ -16,7 +16,7 @@ function submit() {
     guessesCount++;
     guesses = Number($input.value);
 	 $guesses.style.display = 'block';
-	 if ($guesses.innerText == 'Preview guesses:' && guessesCount < 8) {
+	 if ($guesses.innerText == 'Preview guesses:' && guessesCount < 7) {
 	   $guesses.innerText += ' ' + guesses} else {
 		$guesses.innerText += ', ' + guesses}
     if (guesses == number) {
@@ -25,7 +25,7 @@ function submit() {
 		$result.style.background = '#0f0';
 		$result.style.display = 'block';
 		$btn[1].style.display = '';
-	 } else { if (guessesCount >= 8) {
+	 } else { if (guessesCount >= 7) {
 	   //終わり！
 		$result.innerText = 'Game Over! Correct Number was ' + number + ' !';
 		$result.style.background = '#000';
