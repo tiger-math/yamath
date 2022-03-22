@@ -57,7 +57,7 @@ function submit() {
 function init() {
   $input.value = '';
   guessesCount = 0;
-  number = Math.floor(Math.random() * 100);
+  number = Math.floor(Math.random() * 99) + 1;
   $btn[1].style.display = 'none';
   $guesses.style.display = 'none';
   $guesses.innerText = 'Preview guesses:'
