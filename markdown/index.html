@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jQuery.js"></script>
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(font.ttf);
+        }
+        body{
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 50% 50%;
+            height: calc(100vh - 8px);
+            margin: 8px;
+        }
+        #menu{
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+            padding-bottom: 5px;
+        }
+        #input{
+            display: table-cell;
+            padding: 5px 10px;
+            overflow: scroll;
+            font-family: font;
+            border: 1px solid #333;
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        #preview{
+            border: 1px solid #333;
+            border-left: none;
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+    </style>
+    <title>Markdown</title>
+</head>
+<body>
+    <div id="menu">
+        <button class="menu_btn">aiueo</button>
+    </div>
+    <div contenteditable id="input"></div>
+    <div id="preview"></div>
+    <script src="app.js"></script>
+</body>
+</html>
