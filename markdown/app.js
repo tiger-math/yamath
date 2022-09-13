@@ -6,7 +6,7 @@ function preview() {
     console.log(input);
     //h(n), br
     for (i=0; i<input.length; i++) {
-        for (i2=0, i2<6, i2++) {
+        for (i2=0; i2<6; i2++) {
             h(n+1, input[i]);
         }
     }
